@@ -3,6 +3,7 @@ import { Search, Clock, TrendingUp } from 'lucide-react'
 import { Input } from './ui/input'
 import { Badge } from './ui/badge'
 import { WalletFeature } from '../types/wallet'
+import WalletIcon from './WalletIcon'
 
 interface AdvancedSearchProps {
   searchQuery: string
@@ -151,14 +152,7 @@ export function AdvancedSearch({
                     setIsOpen(false)
                   }}
                 >
-                  <img
-                    src={wallet.logo}
-                    alt={wallet.name}
-                    className="w-8 h-8 rounded-lg"
-                    onError={(e) => {
-                      e.currentTarget.src = `https://via.placeholder.com/32x32?text=${wallet.name.charAt(0)}`
-                    }}
-                  />
+                  <WalletIcon walletName={wallet.name} size="md" className="rounded-lg" />
                   <div className="flex-1">
                     <div className="font-medium text-sm text-foreground">
                       {wallet.name}

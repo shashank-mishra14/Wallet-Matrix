@@ -25,6 +25,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Separator } from '@/components/ui/separator'
 import { Progress } from '@/components/ui/progress'
 import { Alert, AlertDescription } from '@/components/ui/alert'
+import WalletIcon from './WalletIcon'
 
 const ComparisonView: React.FC = () => {
   const { wallets, comparison, toggleWalletComparison, clearComparison } = useWalletStore()
@@ -180,14 +181,7 @@ const ComparisonView: React.FC = () => {
                   <CardHeader className="pb-3">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center space-x-3">
-                        <img 
-                          src={wallet.logo} 
-                          alt={wallet.name} 
-                          className="w-12 h-12 rounded-full"
-                          onError={(e) => {
-                            e.currentTarget.src = `https://via.placeholder.com/48x48?text=${wallet.name.charAt(0)}`
-                          }}
-                        />
+                        <WalletIcon walletName={wallet.name} size="xl" className="rounded-full" />
                         <div>
                           <h3 className="font-semibold text-lg">{wallet.name}</h3>
                           <p className="text-sm text-gray-600">{wallet.version}</p>

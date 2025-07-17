@@ -30,6 +30,7 @@ import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import WalletIcon from './WalletIcon'
 
 interface WalletTableProps {
   wallets: WalletFeature[]
@@ -262,14 +263,7 @@ const WalletTable: React.FC<WalletTableProps> = ({ wallets }) => {
                           </TableCell>
                           <TableCell className="font-medium">
                             <div className="flex items-center space-x-3">
-                              <img 
-                                src={wallet.logo} 
-                                alt={wallet.name} 
-                                className="w-8 h-8 rounded-full"
-                                onError={(e) => {
-                                  e.currentTarget.src = `https://via.placeholder.com/32x32?text=${wallet.name.charAt(0)}`
-                                }}
-                              />
+                              <WalletIcon walletName={wallet.name} size="md" className="rounded-full" />
                               <div>
                                 <div className="font-medium">{wallet.name}</div>
                                 <div className="text-sm text-gray-500">{wallet.version}</div>

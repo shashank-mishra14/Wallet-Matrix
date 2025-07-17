@@ -17,6 +17,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 // import { Badge } from '@/components/ui/badge'
 import { Progress } from '@/components/ui/progress'
 import { Alert, AlertDescription } from '@/components/ui/alert'
+import WalletIcon from './WalletIcon'
 
 const AnalyticsView: React.FC = () => {
   const { wallets } = useWalletStore()
@@ -256,14 +257,7 @@ const AnalyticsView: React.FC = () => {
                       <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center text-sm font-bold">
                         {index + 1}
                       </div>
-                      <img 
-                        src={wallet.logo} 
-                        alt={wallet.name} 
-                        className="w-8 h-8 rounded-full"
-                        onError={(e) => {
-                          e.currentTarget.src = `https://via.placeholder.com/32x32?text=${wallet.name.charAt(0)}`
-                        }}
-                      />
+                      <WalletIcon walletName={wallet.name} size="md" className="rounded-full" />
                       <div className="flex-1">
                         <div className="font-medium">{wallet.name}</div>
                         <div className="text-sm text-gray-600">{wallet.performance.uptime}% uptime</div>
@@ -318,14 +312,7 @@ const AnalyticsView: React.FC = () => {
                       <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center text-sm font-bold">
                         {index + 1}
                       </div>
-                      <img 
-                        src={wallet.logo} 
-                        alt={wallet.name} 
-                        className="w-8 h-8 rounded-full"
-                        onError={(e) => {
-                          e.currentTarget.src = `https://via.placeholder.com/32x32?text=${wallet.name.charAt(0)}`
-                        }}
-                      />
+                      <WalletIcon walletName={wallet.name} size="md" className="rounded-full" />
                       <div className="flex-1">
                         <div className="font-medium">{wallet.name}</div>
                         <div className="text-sm text-gray-600">{wallet.featureCount} features</div>

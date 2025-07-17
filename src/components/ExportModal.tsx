@@ -23,6 +23,7 @@ import { Alert, AlertDescription } from '@/components/ui/alert'
 import { Progress } from '@/components/ui/progress'
 import { Input } from '@/components/ui/input'
 // import { Textarea } from '@/components/ui/textarea'
+import WalletIcon from './WalletIcon'
 
 const ExportModal: React.FC = () => {
   const { filteredWallets, comparison, setWallets } = useWalletStore()
@@ -316,14 +317,7 @@ const ExportModal: React.FC = () => {
                     <div className="bg-gray-50 p-3 rounded-md text-sm">
                       {walletsToExport.slice(0, 3).map(wallet => (
                         <div key={wallet.id} className="flex items-center space-x-2">
-                          <img 
-                            src={wallet.logo} 
-                            alt={wallet.name} 
-                            className="w-4 h-4 rounded-full"
-                            onError={(e) => {
-                              e.currentTarget.src = `https://via.placeholder.com/16x16?text=${wallet.name.charAt(0)}`
-                            }}
-                          />
+                          <WalletIcon walletName={wallet.name} size="sm" className="rounded-full" />
                           <span>{wallet.name}</span>
                         </div>
                       ))}

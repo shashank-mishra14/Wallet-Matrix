@@ -21,6 +21,7 @@ import { Badge } from './ui/badge'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select'
 import { Alert, AlertDescription } from './ui/alert'
 import { Progress } from './ui/progress'
+import WalletIcon from './WalletIcon'
 
 interface SimulationStep {
   id: number
@@ -337,14 +338,7 @@ const SolanaPaySimulator: React.FC = () => {
                     {supportedWallets.map((wallet) => (
                       <SelectItem key={wallet.id} value={wallet.id}>
                         <div className="flex items-center space-x-2">
-                          <img 
-                            src={wallet.logo} 
-                            alt={wallet.name} 
-                            className="w-4 h-4 rounded-full"
-                            onError={(e) => {
-                              e.currentTarget.src = `https://via.placeholder.com/16x16?text=${wallet.name.charAt(0)}`
-                            }}
-                          />
+                          <WalletIcon walletName={wallet.name} size="sm" className="rounded-full" />
                           <span>{wallet.name}</span>
                           <Badge variant="outline" className="capitalize">
                             {wallet.features.solanaPayQR}
@@ -524,14 +518,7 @@ const SolanaPaySimulator: React.FC = () => {
                     <tr key={wallet.id} className="border-b">
                       <td className="p-2">
                         <div className="flex items-center space-x-2">
-                          <img 
-                            src={wallet.logo} 
-                            alt={wallet.name} 
-                            className="w-6 h-6 rounded-full"
-                            onError={(e) => {
-                              e.currentTarget.src = `https://via.placeholder.com/24x24?text=${wallet.name.charAt(0)}`
-                            }}
-                          />
+                          <WalletIcon walletName={wallet.name} size="md" className="rounded-full" />
                           <span className="font-medium">{wallet.name}</span>
                         </div>
                       </td>
