@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --solana: #9945ff;
+  --solana-hover: #7c3aed;
+}
+
 @layer base {
   html {
     @apply scroll-smooth;

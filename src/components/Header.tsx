@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { 
@@ -9,19 +9,26 @@ import {
   Download,
   Github,
   ExternalLink,
-  QrCode
+  QrCode,
+  Filter,
+  List
 } from 'lucide-react'
 import { useWalletStore } from '../store/walletStore'
+import { AdvancedSearch } from './AdvancedSearch'
+import { AdvancedFilterPanel } from './AdvancedFilterPanel'
+import { Button } from './ui/button'
 
 const Header: React.FC = () => {
-  const { activeView, setActiveView, comparison } = useWalletStore()
+  const { 
+    activeView, 
+    setActiveView, 
+    comparison, 
+    wallets,
+    filters,
+    setFilters
+  } = useWalletStore()
   const location = useLocation()
-
-  const viewButtons = [
-    { id: 'grid', icon: Grid3X3, label: 'Grid View' },
-    { id: 'table', icon: Table, label: 'Table View' },
-    { id: 'comparison', icon: GitCompare, label: 'Compare', badge: comparison.selectedWallets.length },
-  ]
+  const [showFilters, setShowFilters] = useState(false)
 
   const navigationItems = [
     { path: '/', label: 'Wallets' },
@@ -30,112 +37,157 @@ const Header: React.FC = () => {
     { path: '/export', label: 'Export', icon: Download },
   ]
 
-  return (
-    <header className="bg-white shadow-sm border-b border-gray-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4">
-          {/* Logo and Brand */}
-          <div className="flex items-center space-x-4">
-            <Link to="/" className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-primary-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">SW</span>
-              </div>
-              <span className="text-xl font-bold text-gray-900">Solana Wallets</span>
-            </Link>
-            
-            <div className="hidden md:flex items-center space-x-1 ml-8">
-              {navigationItems.map((item) => {
-                const Icon = item.icon
-                const isActive = location.pathname === item.path
-                
-                return (
-                  <Link
-                    key={item.path}
-                    to={item.path}
-                    className={`relative px-3 py-2 text-sm font-medium rounded-md transition-colors ${
-                      isActive 
-                        ? 'text-primary-600 bg-primary-50' 
-                        : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
-                    }`}
-                  >
-                    <div className="flex items-center space-x-2">
-                      {Icon && <Icon className="w-4 h-4" />}
-                      <span>{item.label}</span>
-                    </div>
-                    {isActive && (
-                      <motion.div
-                        className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary-500"
-                        layoutId="activeTab"
-                        initial={false}
-                        transition={{ duration: 0.2 }}
-                      />
-                    )}
-                  </Link>
-                )
-              })}
-            </div>
-          </div>
+  const handleSearchChange = (query: string) => {
+    setFilters({ search: query })
+  }
 
-          {/* View Toggle (only on main page) */}
-          {location.pathname === '/' && (
-            <div className="flex items-center space-x-2">
-              <div className="bg-gray-100 p-1 rounded-lg">
-                {viewButtons.map((button) => {
-                  const Icon = button.icon
-                  const isActive = activeView === button.id
+  const handleViewModeChange = (mode: 'grid' | 'table') => {
+    setActiveView(mode)
+  }
+
+  const handleWalletSelect = (wallet: any) => {
+    // You can implement navigation to wallet detail or other actions here
+    console.log('Selected wallet:', wallet)
+  }
+
+  return (
+    <>
+      <header className="bg-card border-b border-border/50 px-6 py-4">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex items-center justify-between mb-4">
+            <div className="flex items-center space-x-3">
+              <Link to="/" className="flex items-center space-x-3">
+                <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-primary/80 flex items-center justify-center">
+                  <span className="text-white font-bold text-lg">W</span>
+                </div>
+                <div>
+                  <h1 className="text-xl font-semibold text-foreground tracking-tight">
+                    Wallet Matrix
+                  </h1>
+                  <p className="text-sm text-muted-foreground">
+                    Premium wallet comparison dashboard
+                  </p>
+                </div>
+              </Link>
+            </div>
+            
+            <div className="flex items-center space-x-3">
+              {/* Navigation */}
+              <div className="hidden md:flex items-center space-x-1">
+                {navigationItems.map((item) => {
+                  const Icon = item.icon
+                  const isActive = location.pathname === item.path
                   
                   return (
-                    <button
-                      key={button.id}
-                      onClick={() => setActiveView(button.id as 'grid' | 'table' | 'comparison')}
+                    <Link
+                      key={item.path}
+                      to={item.path}
                       className={`relative px-3 py-2 text-sm font-medium rounded-md transition-colors ${
                         isActive 
-                          ? 'bg-white text-primary-600 shadow-sm' 
-                          : 'text-gray-600 hover:text-gray-900'
+                          ? 'text-primary bg-primary/10' 
+                          : 'text-muted-foreground hover:text-foreground hover:bg-accent'
                       }`}
-                      title={button.label}
                     >
                       <div className="flex items-center space-x-2">
-                        <Icon className="w-4 h-4" />
-                        <span className="hidden sm:inline">{button.label}</span>
-                        {button.badge && button.badge > 0 && (
-                          <span className="bg-primary-500 text-white text-xs rounded-full px-2 py-0.5 min-w-[1.25rem] h-5 flex items-center justify-center">
-                            {button.badge}
-                          </span>
-                        )}
+                        {Icon && <Icon className="w-4 h-4" />}
+                        <span>{item.label}</span>
                       </div>
-                    </button>
+                    </Link>
                   )
                 })}
               </div>
+
+              {/* Export Button */}
+              <Link to="/export">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="border-border hover:bg-accent"
+                >
+                  <Download className="w-4 h-4 mr-2" />
+                  Export
+                </Button>
+              </Link>
+              
+              {/* View Toggle (only on main page) */}
+              {location.pathname === '/' && (
+                <div className="flex items-center border border-border rounded-lg p-1">
+                  <Button
+                    variant={activeView === 'grid' ? 'default' : 'ghost'}
+                    size="sm"
+                    onClick={() => handleViewModeChange('grid')}
+                    className="px-3"
+                  >
+                    <Grid3X3 className="w-4 h-4" />
+                  </Button>
+                  <Button
+                    variant={activeView === 'table' ? 'default' : 'ghost'}
+                    size="sm"
+                    onClick={() => handleViewModeChange('table')}
+                    className="px-3"
+                  >
+                    <List className="w-4 h-4" />
+                  </Button>
+                  <Button
+                    variant={activeView === 'comparison' ? 'default' : 'ghost'}
+                    size="sm"
+                    onClick={() => setActiveView('comparison')}
+                    className="px-3 relative"
+                  >
+                    <GitCompare className="w-4 h-4" />
+                    {comparison.selectedWallets.length > 0 && (
+                      <span className="absolute -top-1 -right-1 bg-primary text-primary-foreground text-xs rounded-full px-1.5 py-0.5 min-w-[1.25rem] h-5 flex items-center justify-center">
+                        {comparison.selectedWallets.length}
+                      </span>
+                    )}
+                  </Button>
+                </div>
+              )}
+
+              {/* GitHub Link */}
+              <a
+                href="https://github.com/yourusername/wallet-matrix"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+                title="View on GitHub"
+              >
+                <Github className="w-5 h-5" />
+              </a>
+            </div>
+          </div>
+          
+          {/* Search and Filter Row - only on main page */}
+          {location.pathname === '/' && (
+            <div className="flex items-center space-x-4">
+              <AdvancedSearch
+                searchQuery={filters.search}
+                onSearchChange={handleSearchChange}
+                wallets={wallets}
+                onWalletSelect={handleWalletSelect}
+              />
+              
+              <Button
+                variant={showFilters ? 'default' : 'outline'}
+                onClick={() => setShowFilters(!showFilters)}
+                className="border-border hover:bg-accent"
+              >
+                <Filter className="w-4 h-4 mr-2" />
+                Filters
+              </Button>
             </div>
           )}
-
-          {/* Right side actions */}
-          <div className="flex items-center space-x-4">
-            <a
-              href="https://github.com/yourusername/solana-wallet-comparison"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600 hover:text-gray-900 transition-colors"
-              title="View on GitHub"
-            >
-              <Github className="w-5 h-5" />
-            </a>
-            
-            <a
-              href="https://solana.com/developers"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600 hover:text-gray-900 transition-colors"
-              title="Solana Developers"
-            >
-              <ExternalLink className="w-5 h-5" />
-            </a>
-          </div>
         </div>
-      </div>
-    </header>
+      </header>
+
+      {/* Filter Panel */}
+      <AdvancedFilterPanel
+        filters={filters}
+        onFiltersChange={setFilters}
+        isVisible={showFilters}
+        onClose={() => setShowFilters(false)}
+      />
+    </>
   )
 }
 

@@ -7,8 +7,7 @@ import Header from './components/Header'
 import WalletGrid from './components/WalletGrid'
 import WalletTable from './components/WalletTable'
 import ComparisonView from './components/ComparisonView'
-import FilterPanel from './components/FilterPanel'
-import SearchBar from './components/SearchBar'
+
 import LoadingSpinner from './components/LoadingSpinner'
 import ErrorMessage from './components/ErrorMessage'
 import AnalyticsView from './components/AnalyticsView'
@@ -77,24 +76,12 @@ function App() {
               {/* Hero Section */}
               <div className="text-center mb-12">
                 <h1 className="text-4xl font-bold text-gray-900 mb-4">
-                  Solana Wallet Comparison
+                  Wallet Matrix
                 </h1>
                 <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                  Compare features, security, and Solana Pay compatibility across all major Solana wallets. 
-                  Make informed decisions with comprehensive, up-to-date wallet data.
+                  Premium Solana wallet comparison dashboard. Compare features, security, and Solana Pay compatibility 
+                  across all major Solana wallets with advanced filtering and insights.
                 </p>
-              </div>
-
-              {/* Search and Filter Section */}
-              <div className="mb-8">
-                <div className="flex flex-col lg:flex-row gap-6">
-                  <div className="flex-1">
-                    <SearchBar />
-                  </div>
-                  <div className="lg:w-80">
-                    <FilterPanel />
-                  </div>
-                </div>
               </div>
 
               {/* Results Summary */}

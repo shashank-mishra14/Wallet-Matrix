@@ -1,6 +1,6 @@
-# Solana Wallet Comparison
+# Wallet Matrix
 
-A comprehensive web application for comparing Solana wallets across features, security, and Solana Pay compatibility.
+A premium Solana wallet comparison dashboard for comparing wallets across features, security, and Solana Pay compatibility with advanced filtering and insights.
 
 ## Features
 
@@ -100,8 +100,8 @@ interface WalletFeature {
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/solana-wallet-comparison.git
-cd solana-wallet-comparison
+git clone https://github.com/yourusername/wallet-matrix.git
+cd wallet-matrix
 ```
 
 2. Install dependencies:
