@@ -1,0 +1,930 @@
+[
+  {
+    "id": "phantom",
+    "name": "Phantom",
+    "description": "A friendly crypto wallet built for DeFi & NFTs on Solana",
+    "platforms": ["web", "chrome", "firefox", "edge", "ios", "android"],
+    "custodyModel": "self-custody",
+    "features": {
+      "dexSwap": true,
+      "nftGallery": true,
+      "staking": true,
+      "fiatOnRamp": true,
+      "fiatOffRamp": true,
+      "pushNotifications": true,
+      "solanaPayQR": "yes",
+      "biometricAuth": true,
+      "hardwareWalletSupport": true,
+      "multiChain": true,
+      "dappBrowser": true
+    },
+    "lastTested": "2024-01-15",
+    "version": "23.2.0",
+    "logo": "https://phantom.app/img/phantom-logo.png",
+    "website": "https://phantom.app",
+    "downloadLinks": {
+      "web": "https://phantom.app/download",
+      "chrome": "https://chrome.google.com/webstore/detail/phantom/bfnaelmomeimhlpmgjnjophhpkkoljpa",
+      "firefox": "https://addons.mozilla.org/en-US/firefox/addon/phantom-app/",
+      "edge": "https://microsoftedge.microsoft.com/addons/detail/phantom/bfnaelmomeimhlpmgjnjophhpkkoljpa",
+      "ios": "https://apps.apple.com/us/app/phantom-solana-wallet/id1598432977",
+      "android": "https://play.google.com/store/apps/details?id=app.phantom"
+    },
+    "solanaPayNotes": "Full support with one-tap QR scanning. Excellent UX with instant transaction confirmations.",
+    "category": "major",
+    "security": {
+      "auditStatus": "audited",
+      "auditCompany": "Kudelski Security",
+      "auditDate": "2023-08-15",
+      "sourceCode": "closed"
+    },
+    "performance": {
+      "transactionSpeed": "fast",
+      "failureRate": "low",
+      "uptime": 99.5
+    },
+    "userExperience": {
+      "onboarding": "easy",
+      "solanaPayUX": "one-tap",
+      "mobileOptimized": true
+    },
+    "pricing": {
+      "free": true,
+      "transactionFees": "low"
+    }
+  },
+  {
+    "id": "solflare",
+    "name": "Solflare",
+    "description": "The safest way to start exploring Solana. Send, receive and swap tokens and NFTs.",
+    "platforms": ["web", "chrome", "firefox", "safari", "edge", "ios", "android"],
+    "custodyModel": "self-custody",
+    "features": {
+      "dexSwap": true,
+      "nftGallery": true,
+      "staking": true,
+      "fiatOnRamp": true,
+      "fiatOffRamp": false,
+      "pushNotifications": true,
+      "solanaPayQR": "yes",
+      "biometricAuth": true,
+      "hardwareWalletSupport": true,
+      "multiChain": false,
+      "dappBrowser": true
+    },
+    "lastTested": "2024-01-10",
+    "version": "2.5.8",
+    "logo": "https://solflare.com/assets/solflare-logo.svg",
+    "website": "https://solflare.com",
+    "downloadLinks": {
+      "web": "https://solflare.com/download",
+      "chrome": "https://chrome.google.com/webstore/detail/solflare-wallet/bhhhlbepdkbapadjdnnojkbgioiodbic",
+      "firefox": "https://addons.mozilla.org/en-US/firefox/addon/solflare-wallet/",
+      "safari": "https://apps.apple.com/us/app/solflare/id1580902717",
+      "edge": "https://microsoftedge.microsoft.com/addons/detail/solflare-wallet/bhhhlbepdkbapadjdnnojkbgioiodbic",
+      "ios": "https://apps.apple.com/us/app/solflare/id1580902717",
+      "android": "https://play.google.com/store/apps/details?id=com.solflare.mobile"
+    },
+    "solanaPayNotes": "Excellent Solana Pay support with QR code scanning. Native integration with Solana ecosystem.",
+    "category": "major",
+    "security": {
+      "auditStatus": "audited",
+      "auditCompany": "Halborn",
+      "auditDate": "2023-06-20",
+      "sourceCode": "partial"
+    },
+    "performance": {
+      "transactionSpeed": "fast",
+      "failureRate": "low",
+      "uptime": 99.2
+    },
+    "userExperience": {
+      "onboarding": "easy",
+      "solanaPayUX": "one-tap",
+      "mobileOptimized": true
+    },
+    "pricing": {
+      "free": true,
+      "transactionFees": "low"
+    }
+  },
+  {
+    "id": "backpack",
+    "name": "Backpack",
+    "description": "A home for your xNFTs",
+    "platforms": ["web", "chrome", "firefox", "ios", "android"],
+    "custodyModel": "self-custody",
+    "features": {
+      "dexSwap": true,
+      "nftGallery": true,
+      "staking": false,
+      "fiatOnRamp": false,
+      "fiatOffRamp": false,
+      "pushNotifications": true,
+      "solanaPayQR": "partial",
+      "biometricAuth": false,
+      "hardwareWalletSupport": false,
+      "multiChain": false,
+      "dappBrowser": true
+    },
+    "lastTested": "2024-01-12",
+    "version": "0.6.0",
+    "logo": "https://backpack.app/logo.png",
+    "website": "https://backpack.app",
+    "downloadLinks": {
+      "web": "https://backpack.app/download",
+      "chrome": "https://chrome.google.com/webstore/detail/backpack/aflkmfhebedbjioipglgcbcmnbpgliof",
+      "firefox": "https://addons.mozilla.org/en-US/firefox/addon/backpack-wallet/",
+      "ios": "https://apps.apple.com/us/app/backpack-crypto-wallet/id1664116263",
+      "android": "https://play.google.com/store/apps/details?id=app.backpack.mobile"
+    },
+    "solanaPayNotes": "Basic Solana Pay support. QR scanning available but requires navigation through menus.",
+    "category": "major",
+    "security": {
+      "auditStatus": "pending",
+      "sourceCode": "open"
+    },
+    "performance": {
+      "transactionSpeed": "medium",
+      "failureRate": "medium",
+      "uptime": 98.0
+    },
+    "userExperience": {
+      "onboarding": "medium",
+      "solanaPayUX": "buried",
+      "mobileOptimized": true
+    },
+    "pricing": {
+      "free": true,
+      "transactionFees": "low"
+    }
+  },
+  {
+    "id": "bitget-wallet",
+    "name": "Bitget Wallet",
+    "description": "The easiest and most secure way to store, send, receive, and exchange cryptocurrencies",
+    "platforms": ["web", "chrome", "firefox", "ios", "android"],
+    "custodyModel": "self-custody",
+    "features": {
+      "dexSwap": true,
+      "nftGallery": true,
+      "staking": true,
+      "fiatOnRamp": true,
+      "fiatOffRamp": true,
+      "pushNotifications": true,
+      "solanaPayQR": "partial",
+      "biometricAuth": true,
+      "hardwareWalletSupport": false,
+      "multiChain": true,
+      "dappBrowser": true
+    },
+    "lastTested": "2024-01-08",
+    "version": "8.15.0",
+    "logo": "https://web3.bitget.com/static/favicon.ico",
+    "website": "https://web3.bitget.com",
+    "downloadLinks": {
+      "web": "https://web3.bitget.com/wallet-download",
+      "chrome": "https://chrome.google.com/webstore/detail/bitget-wallet-formerly-bi/jiidiaalihmmhddjgbnbgdfflelocpak",
+      "firefox": "https://addons.mozilla.org/en-US/firefox/addon/bitget-wallet/",
+      "ios": "https://apps.apple.com/us/app/bitget-wallet/id1436799345",
+      "android": "https://play.google.com/store/apps/details?id=com.bitkeep.wallet"
+    },
+    "solanaPayNotes": "Supports Solana Pay but implementation is not native. Requires manual setup for QR scanning.",
+    "category": "major",
+    "security": {
+      "auditStatus": "audited",
+      "auditCompany": "SlowMist",
+      "auditDate": "2023-09-10",
+      "sourceCode": "closed"
+    },
+    "performance": {
+      "transactionSpeed": "medium",
+      "failureRate": "medium",
+      "uptime": 97.8
+    },
+    "userExperience": {
+      "onboarding": "medium",
+      "solanaPayUX": "buried",
+      "mobileOptimized": true
+    },
+    "pricing": {
+      "free": true,
+      "transactionFees": "medium"
+    }
+  },
+  {
+    "id": "jupiter-wallet",
+    "name": "Jupiter Wallet",
+    "description": "The best way to swap tokens on Solana",
+    "platforms": ["web", "chrome"],
+    "custodyModel": "self-custody",
+    "features": {
+      "dexSwap": true,
+      "nftGallery": false,
+      "staking": false,
+      "fiatOnRamp": false,
+      "fiatOffRamp": false,
+      "pushNotifications": false,
+      "solanaPayQR": "no",
+      "biometricAuth": false,
+      "hardwareWalletSupport": true,
+      "multiChain": false,
+      "dappBrowser": false
+    },
+    "lastTested": "2024-01-05",
+    "version": "1.2.0",
+    "logo": "https://jup.ag/logo.png",
+    "website": "https://jup.ag",
+    "downloadLinks": {
+      "web": "https://jup.ag/swap",
+      "chrome": "https://chrome.google.com/webstore/detail/jupiter-wallet/pcbmhedagiemnlhcpakbidgmgpgnlhfp"
+    },
+    "solanaPayNotes": "No Solana Pay support. Focused on DEX aggregation functionality.",
+    "category": "major",
+    "security": {
+      "auditStatus": "audited",
+      "auditCompany": "Ottersec",
+      "auditDate": "2023-11-15",
+      "sourceCode": "open"
+    },
+    "performance": {
+      "transactionSpeed": "fast",
+      "failureRate": "low",
+      "uptime": 99.8
+    },
+    "userExperience": {
+      "onboarding": "easy",
+      "solanaPayUX": "none",
+      "mobileOptimized": false
+    },
+    "pricing": {
+      "free": true,
+      "transactionFees": "low"
+    }
+  },
+  {
+    "id": "okx-wallet",
+    "name": "OKX Wallet",
+    "description": "The most comprehensive Web3 wallet",
+    "platforms": ["web", "chrome", "firefox", "ios", "android", "desktop"],
+    "custodyModel": "self-custody",
+    "features": {
+      "dexSwap": true,
+      "nftGallery": true,
+      "staking": true,
+      "fiatOnRamp": true,
+      "fiatOffRamp": true,
+      "pushNotifications": true,
+      "solanaPayQR": "partial",
+      "biometricAuth": true,
+      "hardwareWalletSupport": true,
+      "multiChain": true,
+      "dappBrowser": true
+    },
+    "lastTested": "2024-01-07",
+    "version": "3.18.0",
+    "logo": "https://static.okx.com/cdn/assets/imgs/221/589087FB8D4B4A2F.png",
+    "website": "https://www.okx.com/web3",
+    "downloadLinks": {
+      "web": "https://www.okx.com/web3",
+      "chrome": "https://chrome.google.com/webstore/detail/okx-wallet/mcohilncbfahbmgdjkbpemcciiolgcge",
+      "firefox": "https://addons.mozilla.org/en-US/firefox/addon/okx-wallet/",
+      "ios": "https://apps.apple.com/us/app/okx-buy-bitcoin-eth-crypto/id1327268470",
+      "android": "https://play.google.com/store/apps/details?id=com.okinc.okex.gp",
+      "desktop": "https://www.okx.com/download"
+    },
+    "solanaPayNotes": "Solana Pay support available but not prominently featured. Multi-chain focus may affect UX.",
+    "category": "major",
+    "security": {
+      "auditStatus": "audited",
+      "auditCompany": "CertiK",
+      "auditDate": "2023-07-30",
+      "sourceCode": "closed"
+    },
+    "performance": {
+      "transactionSpeed": "medium",
+      "failureRate": "medium",
+      "uptime": 98.5
+    },
+    "userExperience": {
+      "onboarding": "medium",
+      "solanaPayUX": "buried",
+      "mobileOptimized": true
+    },
+    "pricing": {
+      "free": true,
+      "transactionFees": "medium"
+    }
+  },
+  {
+    "id": "exodus",
+    "name": "Exodus",
+    "description": "Secure, manage, and exchange your favorite cryptocurrencies",
+    "platforms": ["web", "chrome", "ios", "android", "desktop"],
+    "custodyModel": "self-custody",
+    "features": {
+      "dexSwap": true,
+      "nftGallery": true,
+      "staking": true,
+      "fiatOnRamp": true,
+      "fiatOffRamp": true,
+      "pushNotifications": true,
+      "solanaPayQR": "no",
+      "biometricAuth": true,
+      "hardwareWalletSupport": true,
+      "multiChain": true,
+      "dappBrowser": false
+    },
+    "lastTested": "2024-01-03",
+    "version": "23.12.19",
+    "logo": "https://www.exodus.com/img/exodus-logo.png",
+    "website": "https://www.exodus.com",
+    "downloadLinks": {
+      "web": "https://www.exodus.com/download",
+      "chrome": "https://chrome.google.com/webstore/detail/exodus-web3-wallet/aholpfdialjgjfhomihkjbmgjidlcdno",
+      "ios": "https://apps.apple.com/us/app/exodus-crypto-bitcoin-wallet/id1414384820",
+      "android": "https://play.google.com/store/apps/details?id=exodusmovement.exodus",
+      "desktop": "https://www.exodus.com/download"
+    },
+    "solanaPayNotes": "No Solana Pay support. Focused on multi-chain portfolio management.",
+    "category": "major",
+    "security": {
+      "auditStatus": "audited",
+      "auditCompany": "Cure53",
+      "auditDate": "2023-05-15",
+      "sourceCode": "partial"
+    },
+    "performance": {
+      "transactionSpeed": "medium",
+      "failureRate": "medium",
+      "uptime": 98.9
+    },
+    "userExperience": {
+      "onboarding": "easy",
+      "solanaPayUX": "none",
+      "mobileOptimized": true
+    },
+    "pricing": {
+      "free": true,
+      "transactionFees": "medium"
+    }
+  },
+  {
+    "id": "glow",
+    "name": "Glow",
+    "description": "A Solana wallet designed for power users",
+    "platforms": ["web", "chrome", "firefox"],
+    "custodyModel": "self-custody",
+    "features": {
+      "dexSwap": true,
+      "nftGallery": true,
+      "staking": true,
+      "fiatOnRamp": false,
+      "fiatOffRamp": false,
+      "pushNotifications": false,
+      "solanaPayQR": "yes",
+      "biometricAuth": false,
+      "hardwareWalletSupport": true,
+      "multiChain": false,
+      "dappBrowser": true
+    },
+    "lastTested": "2024-01-11",
+    "version": "1.8.2",
+    "logo": "https://glow.app/logo.png",
+    "website": "https://glow.app",
+    "downloadLinks": {
+      "web": "https://glow.app",
+      "chrome": "https://chrome.google.com/webstore/detail/glow-solana-wallet/ojbcfhjmpigfobdcjnmjdgmgaipddaab",
+      "firefox": "https://addons.mozilla.org/en-US/firefox/addon/glow-wallet/"
+    },
+    "solanaPayNotes": "Excellent Solana Pay implementation with advanced features for power users.",
+    "category": "major",
+    "security": {
+      "auditStatus": "unaudited",
+      "sourceCode": "open"
+    },
+    "performance": {
+      "transactionSpeed": "fast",
+      "failureRate": "low",
+      "uptime": 99.1
+    },
+    "userExperience": {
+      "onboarding": "complex",
+      "solanaPayUX": "one-tap",
+      "mobileOptimized": false
+    },
+    "pricing": {
+      "free": true,
+      "transactionFees": "low"
+    }
+  },
+  {
+    "id": "slope",
+    "name": "Slope",
+    "description": "The Solana wallet built for DeFi",
+    "platforms": ["web", "chrome", "ios", "android"],
+    "custodyModel": "self-custody",
+    "features": {
+      "dexSwap": true,
+      "nftGallery": true,
+      "staking": true,
+      "fiatOnRamp": true,
+      "fiatOffRamp": false,
+      "pushNotifications": true,
+      "solanaPayQR": "partial",
+      "biometricAuth": true,
+      "hardwareWalletSupport": false,
+      "multiChain": false,
+      "dappBrowser": true
+    },
+    "lastTested": "2024-01-09",
+    "version": "3.4.1",
+    "logo": "https://slope.finance/logo.png",
+    "website": "https://slope.finance",
+    "downloadLinks": {
+      "web": "https://slope.finance/download",
+      "chrome": "https://chrome.google.com/webstore/detail/slope-solana-wallet/pocmplpaccanhmnllbbkpgfliimjljgo",
+      "ios": "https://apps.apple.com/us/app/slope-finance/id1574624577",
+      "android": "https://play.google.com/store/apps/details?id=com.wd.wallet"
+    },
+    "solanaPayNotes": "Solana Pay support available but inconsistent across platforms. Better on mobile.",
+    "category": "major",
+    "security": {
+      "auditStatus": "unaudited",
+      "sourceCode": "closed"
+    },
+    "performance": {
+      "transactionSpeed": "medium",
+      "failureRate": "medium",
+      "uptime": 97.5
+    },
+    "userExperience": {
+      "onboarding": "easy",
+      "solanaPayUX": "buried",
+      "mobileOptimized": true
+    },
+    "pricing": {
+      "free": true,
+      "transactionFees": "low"
+    }
+  },
+  {
+    "id": "ledger-nano",
+    "name": "Ledger Nano S/X",
+    "description": "The most trusted hardware wallet for Solana",
+    "platforms": ["hardware", "web", "desktop"],
+    "custodyModel": "self-custody",
+    "features": {
+      "dexSwap": false,
+      "nftGallery": false,
+      "staking": true,
+      "fiatOnRamp": false,
+      "fiatOffRamp": false,
+      "pushNotifications": false,
+      "solanaPayQR": "no",
+      "biometricAuth": false,
+      "hardwareWalletSupport": true,
+      "multiChain": true,
+      "dappBrowser": false
+    },
+    "lastTested": "2024-01-14",
+    "version": "2.1.0",
+    "logo": "https://www.ledger.com/favicon.ico",
+    "website": "https://www.ledger.com",
+    "downloadLinks": {
+      "hardware": "https://www.ledger.com/products/ledger-nano-s-plus",
+      "web": "https://www.ledger.com/ledger-live",
+      "desktop": "https://www.ledger.com/ledger-live/download"
+    },
+    "solanaPayNotes": "No Solana Pay support. Hardware wallets require connection to software wallet for QR functionality.",
+    "category": "hardware",
+    "security": {
+      "auditStatus": "audited",
+      "auditCompany": "Donjon",
+      "auditDate": "2023-04-20",
+      "sourceCode": "partial"
+    },
+    "performance": {
+      "transactionSpeed": "slow",
+      "failureRate": "low",
+      "uptime": 99.9
+    },
+    "userExperience": {
+      "onboarding": "complex",
+      "solanaPayUX": "none",
+      "mobileOptimized": false
+    },
+    "pricing": {
+      "free": false,
+      "transactionFees": "low",
+      "additionalCosts": "Hardware device: $79-$149"
+    }
+  },
+  {
+    "id": "trezor",
+    "name": "Trezor",
+    "description": "The original hardware wallet",
+    "platforms": ["hardware", "web", "desktop"],
+    "custodyModel": "self-custody",
+    "features": {
+      "dexSwap": false,
+      "nftGallery": false,
+      "staking": true,
+      "fiatOnRamp": false,
+      "fiatOffRamp": false,
+      "pushNotifications": false,
+      "solanaPayQR": "no",
+      "biometricAuth": false,
+      "hardwareWalletSupport": true,
+      "multiChain": true,
+      "dappBrowser": false
+    },
+    "lastTested": "2024-01-13",
+    "version": "23.12.1",
+    "logo": "https://trezor.io/favicon.ico",
+    "website": "https://trezor.io",
+    "downloadLinks": {
+      "hardware": "https://trezor.io/trezor-model-t",
+      "web": "https://suite.trezor.io/web/",
+      "desktop": "https://suite.trezor.io/desktop/"
+    },
+    "solanaPayNotes": "No Solana Pay support. Limited Solana functionality compared to other hardware wallets.",
+    "category": "hardware",
+    "security": {
+      "auditStatus": "audited",
+      "auditCompany": "NCC Group",
+      "auditDate": "2023-03-10",
+      "sourceCode": "open"
+    },
+    "performance": {
+      "transactionSpeed": "slow",
+      "failureRate": "low",
+      "uptime": 99.8
+    },
+    "userExperience": {
+      "onboarding": "complex",
+      "solanaPayUX": "none",
+      "mobileOptimized": false
+    },
+    "pricing": {
+      "free": false,
+      "transactionFees": "low",
+      "additionalCosts": "Hardware device: $69-$219"
+    }
+  },
+  {
+    "id": "tangem",
+    "name": "Tangem",
+    "description": "Smart card hardware wallet",
+    "platforms": ["hardware", "ios", "android"],
+    "custodyModel": "self-custody",
+    "features": {
+      "dexSwap": false,
+      "nftGallery": true,
+      "staking": false,
+      "fiatOnRamp": true,
+      "fiatOffRamp": false,
+      "pushNotifications": true,
+      "solanaPayQR": "no",
+      "biometricAuth": false,
+      "hardwareWalletSupport": true,
+      "multiChain": true,
+      "dappBrowser": false
+    },
+    "lastTested": "2024-01-06",
+    "version": "3.42.0",
+    "logo": "https://tangem.com/favicon.ico",
+    "website": "https://tangem.com",
+    "downloadLinks": {
+      "hardware": "https://tangem.com/shop/",
+      "ios": "https://apps.apple.com/app/tangem/id1354868448",
+      "android": "https://play.google.com/store/apps/details?id=com.tangem.wallet"
+    },
+    "solanaPayNotes": "No Solana Pay support. Card-based authentication doesn't support QR scanning.",
+    "category": "hardware",
+    "security": {
+      "auditStatus": "audited",
+      "auditCompany": "Kudelski Security",
+      "auditDate": "2023-09-25",
+      "sourceCode": "partial"
+    },
+    "performance": {
+      "transactionSpeed": "medium",
+      "failureRate": "low",
+      "uptime": 99.6
+    },
+    "userExperience": {
+      "onboarding": "easy",
+      "solanaPayUX": "none",
+      "mobileOptimized": true
+    },
+    "pricing": {
+      "free": false,
+      "transactionFees": "low",
+      "additionalCosts": "Hardware cards: $50-$100"
+    }
+  },
+  {
+    "id": "trust-wallet",
+    "name": "Trust Wallet",
+    "description": "The most trusted & secure crypto wallet",
+    "platforms": ["ios", "android", "chrome", "desktop"],
+    "custodyModel": "self-custody",
+    "features": {
+      "dexSwap": true,
+      "nftGallery": true,
+      "staking": true,
+      "fiatOnRamp": true,
+      "fiatOffRamp": true,
+      "pushNotifications": true,
+      "solanaPayQR": "no",
+      "biometricAuth": true,
+      "hardwareWalletSupport": false,
+      "multiChain": true,
+      "dappBrowser": true
+    },
+    "lastTested": "2024-01-04",
+    "version": "8.15",
+    "logo": "https://trustwallet.com/assets/images/favicon.ico",
+    "website": "https://trustwallet.com",
+    "downloadLinks": {
+      "ios": "https://apps.apple.com/app/trust-crypto-bitcoin-wallet/id1288339409",
+      "android": "https://play.google.com/store/apps/details?id=com.wallet.crypto.trustapp",
+      "chrome": "https://chrome.google.com/webstore/detail/trust-wallet/egjidjbpglichdcondbcbdnbeeppgdph",
+      "desktop": "https://trustwallet.com/download"
+    },
+    "solanaPayNotes": "No Solana Pay support. Multi-chain focus with limited Solana-specific features.",
+    "category": "major",
+    "security": {
+      "auditStatus": "audited",
+      "auditCompany": "Least Authority",
+      "auditDate": "2023-02-14",
+      "sourceCode": "partial"
+    },
+    "performance": {
+      "transactionSpeed": "medium",
+      "failureRate": "medium",
+      "uptime": 98.7
+    },
+    "userExperience": {
+      "onboarding": "easy",
+      "solanaPayUX": "none",
+      "mobileOptimized": true
+    },
+    "pricing": {
+      "free": true,
+      "transactionFees": "medium"
+    }
+  },
+  {
+    "id": "coinbase-wallet",
+    "name": "Coinbase Wallet",
+    "description": "Your key to the world of crypto",
+    "platforms": ["web", "chrome", "ios", "android"],
+    "custodyModel": "self-custody",
+    "features": {
+      "dexSwap": true,
+      "nftGallery": true,
+      "staking": false,
+      "fiatOnRamp": true,
+      "fiatOffRamp": true,
+      "pushNotifications": true,
+      "solanaPayQR": "no",
+      "biometricAuth": true,
+      "hardwareWalletSupport": false,
+      "multiChain": true,
+      "dappBrowser": true
+    },
+    "lastTested": "2024-01-02",
+    "version": "35.0.0",
+    "logo": "https://www.coinbase.com/favicon.ico",
+    "website": "https://www.coinbase.com/wallet",
+    "downloadLinks": {
+      "web": "https://www.coinbase.com/wallet/downloads",
+      "chrome": "https://chrome.google.com/webstore/detail/coinbase-wallet-extension/hnfanknocfeofbddgcijnmhnfnkdnaad",
+      "ios": "https://apps.apple.com/us/app/coinbase-wallet/id1278383455",
+      "android": "https://play.google.com/store/apps/details?id=org.toshi"
+    },
+    "solanaPayNotes": "No Solana Pay support. Limited Solana ecosystem integration.",
+    "category": "major",
+    "security": {
+      "auditStatus": "audited",
+      "auditCompany": "Trail of Bits",
+      "auditDate": "2023-01-20",
+      "sourceCode": "closed"
+    },
+    "performance": {
+      "transactionSpeed": "medium",
+      "failureRate": "medium",
+      "uptime": 99.0
+    },
+    "userExperience": {
+      "onboarding": "easy",
+      "solanaPayUX": "none",
+      "mobileOptimized": true
+    },
+    "pricing": {
+      "free": true,
+      "transactionFees": "medium"
+    }
+  },
+  {
+    "id": "atomic-wallet",
+    "name": "Atomic Wallet",
+    "description": "Manage your Bitcoin, Ethereum, XRP, Litecoin, XLM and over 300 other coins and tokens",
+    "platforms": ["desktop", "ios", "android"],
+    "custodyModel": "self-custody",
+    "features": {
+      "dexSwap": true,
+      "nftGallery": false,
+      "staking": true,
+      "fiatOnRamp": true,
+      "fiatOffRamp": true,
+      "pushNotifications": true,
+      "solanaPayQR": "no",
+      "biometricAuth": true,
+      "hardwareWalletSupport": false,
+      "multiChain": true,
+      "dappBrowser": false
+    },
+    "lastTested": "2024-01-01",
+    "version": "2.73.3",
+    "logo": "https://atomicwallet.io/favicon.ico",
+    "website": "https://atomicwallet.io",
+    "downloadLinks": {
+      "desktop": "https://atomicwallet.io/download",
+      "ios": "https://apps.apple.com/us/app/atomic-wallet/id1478257827",
+      "android": "https://play.google.com/store/apps/details?id=io.atomicwallet"
+    },
+    "solanaPayNotes": "No Solana Pay support. Desktop-focused with basic Solana functionality.",
+    "category": "regional",
+    "security": {
+      "auditStatus": "unaudited",
+      "sourceCode": "closed"
+    },
+    "performance": {
+      "transactionSpeed": "slow",
+      "failureRate": "high",
+      "uptime": 96.5
+    },
+    "userExperience": {
+      "onboarding": "medium",
+      "solanaPayUX": "none",
+      "mobileOptimized": false
+    },
+    "pricing": {
+      "free": true,
+      "transactionFees": "high"
+    }
+  },
+  {
+    "id": "torus",
+    "name": "Torus",
+    "description": "Seamless logins for Web3",
+    "platforms": ["web", "chrome", "firefox", "safari"],
+    "custodyModel": "mpc",
+    "features": {
+      "dexSwap": false,
+      "nftGallery": false,
+      "staking": false,
+      "fiatOnRamp": true,
+      "fiatOffRamp": false,
+      "pushNotifications": false,
+      "solanaPayQR": "no",
+      "biometricAuth": false,
+      "hardwareWalletSupport": false,
+      "multiChain": true,
+      "dappBrowser": true
+    },
+    "lastTested": "2023-12-28",
+    "version": "4.1.2",
+    "logo": "https://tor.us/favicon.ico",
+    "website": "https://tor.us",
+    "downloadLinks": {
+      "web": "https://app.tor.us",
+      "chrome": "https://chrome.google.com/webstore/detail/torus/nkbihfbeogaeaoehlefnkodbefgpgknn",
+      "firefox": "https://addons.mozilla.org/en-US/firefox/addon/torus-wallet/",
+      "safari": "https://apps.apple.com/us/app/torus-wallet/id1506927346"
+    },
+    "solanaPayNotes": "No Solana Pay support. Focused on social logins and ease of use.",
+    "category": "niche",
+    "security": {
+      "auditStatus": "audited",
+      "auditCompany": "Quantstamp",
+      "auditDate": "2023-03-15",
+      "sourceCode": "open"
+    },
+    "performance": {
+      "transactionSpeed": "medium",
+      "failureRate": "medium",
+      "uptime": 98.2
+    },
+    "userExperience": {
+      "onboarding": "easy",
+      "solanaPayUX": "none",
+      "mobileOptimized": true
+    },
+    "pricing": {
+      "free": true,
+      "transactionFees": "medium"
+    }
+  },
+  {
+    "id": "saga",
+    "name": "Saga",
+    "description": "The first Web3 phone with built-in Solana wallet",
+    "platforms": ["android"],
+    "custodyModel": "self-custody",
+    "features": {
+      "dexSwap": true,
+      "nftGallery": true,
+      "staking": true,
+      "fiatOnRamp": true,
+      "fiatOffRamp": true,
+      "pushNotifications": true,
+      "solanaPayQR": "yes",
+      "biometricAuth": true,
+      "hardwareWalletSupport": true,
+      "multiChain": false,
+      "dappBrowser": true
+    },
+    "lastTested": "2024-01-16",
+    "version": "1.0.0",
+    "logo": "https://saga.solana.com/favicon.ico",
+    "website": "https://saga.solana.com",
+    "downloadLinks": {
+      "android": "https://saga.solana.com/buy"
+    },
+    "solanaPayNotes": "Excellent Solana Pay integration with hardware-level security. Built specifically for Solana.",
+    "category": "niche",
+    "security": {
+      "auditStatus": "audited",
+      "auditCompany": "Solana Labs",
+      "auditDate": "2023-12-01",
+      "sourceCode": "partial"
+    },
+    "performance": {
+      "transactionSpeed": "fast",
+      "failureRate": "low",
+      "uptime": 99.9
+    },
+    "userExperience": {
+      "onboarding": "easy",
+      "solanaPayUX": "one-tap",
+      "mobileOptimized": true
+    },
+    "pricing": {
+      "free": false,
+      "transactionFees": "low",
+      "additionalCosts": "Saga phone: $599"
+    }
+  },
+  {
+    "id": "decaf",
+    "name": "Decaf",
+    "description": "Privacy-focused Solana wallet",
+    "platforms": ["web", "chrome"],
+    "custodyModel": "self-custody",
+    "features": {
+      "dexSwap": false,
+      "nftGallery": false,
+      "staking": false,
+      "fiatOnRamp": false,
+      "fiatOffRamp": false,
+      "pushNotifications": false,
+      "solanaPayQR": "yes",
+      "biometricAuth": false,
+      "hardwareWalletSupport": true,
+      "multiChain": false,
+      "dappBrowser": false
+    },
+    "lastTested": "2023-12-30",
+    "version": "0.3.1",
+    "logo": "https://decaf.so/favicon.ico",
+    "website": "https://decaf.so",
+    "downloadLinks": {
+      "web": "https://decaf.so",
+      "chrome": "https://chrome.google.com/webstore/detail/decaf-wallet/nghobmfcnocnjndppckjlhpfhghnfpho"
+    },
+    "solanaPayNotes": "Good Solana Pay support with privacy features. Minimalist approach.",
+    "category": "niche",
+    "security": {
+      "auditStatus": "pending",
+      "sourceCode": "open"
+    },
+    "performance": {
+      "transactionSpeed": "fast",
+      "failureRate": "low",
+      "uptime": 98.8
+    },
+    "userExperience": {
+      "onboarding": "complex",
+      "solanaPayUX": "one-tap",
+      "mobileOptimized": false
+    },
+    "pricing": {
+      "free": true,
+      "transactionFees": "low"
+    }
+  }
+] 
