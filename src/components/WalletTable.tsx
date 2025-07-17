@@ -5,8 +5,6 @@ import {
   ChevronUp, 
   ArrowUpDown, 
   ExternalLink, 
-  Shield, 
-  Zap, 
   Check, 
   X, 
   AlertTriangle,

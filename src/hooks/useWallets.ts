@@ -18,7 +18,7 @@ export const useWallets = () => {
     queryKey: ['wallets'],
     queryFn: fetchWallets,
     staleTime: 30 * 60 * 1000, // 30 minutes
-    cacheTime: 60 * 60 * 1000, // 1 hour
+    gcTime: 60 * 60 * 1000, // 1 hour
     retry: 3,
     retryDelay: (attemptIndex) => Math.min(1000 * 2 ** attemptIndex, 30000),
   })
@@ -37,6 +37,6 @@ export const useWallet = (walletId: string) => {
     },
     enabled: !!walletId,
     staleTime: 30 * 60 * 1000,
-    cacheTime: 60 * 60 * 1000,
+    gcTime: 60 * 60 * 1000,
   })
 } 

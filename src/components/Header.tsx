@@ -1,14 +1,12 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { motion } from 'framer-motion'
+// import { motion } from 'framer-motion'
 import { 
   Grid3X3, 
-  Table, 
   GitCompare, 
   BarChart3, 
   Download,
   Github,
-  ExternalLink,
   QrCode,
   Filter,
   List

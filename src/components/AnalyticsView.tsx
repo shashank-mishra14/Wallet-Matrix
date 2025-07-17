@@ -1,23 +1,20 @@
-import React, { useMemo } from 'react'
-import { motion } from 'framer-motion'
+import { useMemo } from 'react'
+// import { motion } from 'framer-motion'
 import { 
   BarChart3, 
-  PieChart, 
-  TrendingUp, 
-  TrendingDown,
+  TrendingUp,
   Shield,
   Zap,
   Users,
-  Star,
   AlertTriangle,
   CheckCircle,
   XCircle
 } from 'lucide-react'
 import { useWalletStore } from '../store/walletStore'
-import { WalletFeature } from '../types/wallet'
+// import { WalletFeature } from '../types/wallet'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import { Badge } from '@/components/ui/badge'
+// import { Badge } from '@/components/ui/badge'
 import { Progress } from '@/components/ui/progress'
 import { Alert, AlertDescription } from '@/components/ui/alert'
 

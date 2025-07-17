@@ -6,7 +6,6 @@ import {
   AlertTriangle, 
   Shield, 
   Zap, 
-  Eye, 
   ExternalLink,
   Plus,
   Minus,

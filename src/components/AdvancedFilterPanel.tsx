@@ -1,6 +1,6 @@
-import React from 'react'
+// import React from 'react'
 import { CheckCircle, Circle, X } from 'lucide-react'
-import { motion, AnimatePresence } from 'framer-motion'
+// import { motion, AnimatePresence } from 'framer-motion'
 import { Card } from './ui/card'
 import { Button } from './ui/button'
 import { Separator } from './ui/separator'
