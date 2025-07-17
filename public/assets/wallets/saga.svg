@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="sagaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6D28D9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main Background -->
+  <rect x="15" y="15" width="70" height="70" rx="12" ry="12" fill="url(#sagaGradient)" />
+  
+  <!-- Letter S -->
+  <path d="M35 30 Q30 30 30 35 Q30 40 35 40 L55 40 Q60 40 60 45 Q60 50 55 50 L35 50 Q30 50 30 55 Q30 60 35 60 L65 60 Q70 60 70 65 Q70 70 65 70 L45 70 Q40 70 40 65 Q40 60 45 60 L65 60 Q70 60 70 55 Q70 50 65 50 L45 50 Q40 50 40 45 Q40 40 45 40 L65 40 Q70 40 70 35 Q70 30 65 30 Z" 
+        fill="white" 
+        opacity="0.9" />
+  
+  <!-- Simplified S -->
+  <path d="M35 35 Q35 30 40 30 L60 30 Q65 30 65 35 Q65 40 60 40 L40 40 Q35 40 35 45 Q35 50 40 50 L60 50 Q65 50 65 55 Q65 60 60 60 L40 60 Q35 60 35 65" 
+        stroke="white" 
+        stroke-width="3" 
+        fill="none" 
+        stroke-linecap="round" />
+</svg> 

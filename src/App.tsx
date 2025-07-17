@@ -13,6 +13,7 @@ import ErrorMessage from './components/ErrorMessage'
 import AnalyticsView from './components/AnalyticsView'
 import ExportModal from './components/ExportModal'
 import SolanaPaySimulator from './components/SolanaPaySimulator'
+import WalletIconTest from './components/WalletIconTest'
 
 function App() {
   const { 
@@ -132,6 +133,7 @@ function App() {
           <Route path="/analytics" element={<AnalyticsView />} />
           <Route path="/export" element={<ExportModal />} />
           <Route path="/solana-pay" element={<SolanaPaySimulator />} />
+          <Route path="/test-icons" element={<WalletIconTest />} />
         </Routes>
       </main>
     </div>
