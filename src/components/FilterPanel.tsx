@@ -46,7 +46,6 @@ const FilterSection: React.FC<FilterSectionProps> = ({ title, children, defaultO
 
 const FilterPanel: React.FC = () => {
   const { filters, setFilters, resetFilters } = useWalletStore()
-  const [showSaveModal, setShowSaveModal] = useState(false)
 
   const platforms: Platform[] = [
     'web', 'chrome', 'firefox', 'safari', 'edge', 
@@ -106,13 +105,6 @@ const FilterPanel: React.FC = () => {
           <h3 className="text-lg font-semibold text-gray-900">Filters</h3>
         </div>
         <div className="flex items-center space-x-2">
-          <button
-            onClick={() => setShowSaveModal(true)}
-            className="p-2 text-gray-500 hover:text-gray-700 transition-colors"
-            title="Save Filter"
-          >
-            <Bookmark className="w-4 h-4" />
-          </button>
           {hasActiveFilters && (
             <button
               onClick={resetFilters}

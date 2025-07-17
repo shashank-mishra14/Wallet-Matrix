@@ -43,7 +43,6 @@ const SolanaPaySimulator: React.FC = () => {
   const { wallets } = useWalletStore()
   const [selectedWallet, setSelectedWallet] = useState<WalletFeature | null>(null)
   const [isSimulating, setIsSimulating] = useState(false)
-  const [currentStep, setCurrentStep] = useState(0)
   const [qrCodeUrl, setQrCodeUrl] = useState<string>('')
   const [simulation, setSimulation] = useState<WalletSimulation | null>(null)
   const [simulationComplete, setSimulationComplete] = useState(false)
@@ -194,7 +193,6 @@ const SolanaPaySimulator: React.FC = () => {
     const sim = createSimulation(selectedWallet)
     setSimulation(sim)
     setIsSimulating(true)
-    setCurrentStep(0)
     setSimulationComplete(false)
 
     let simulationFailed = false
@@ -203,7 +201,7 @@ const SolanaPaySimulator: React.FC = () => {
       const step = sim.steps[i]
       
       // Update current step
-      setCurrentStep(i)
+      // setCurrentStep(i) // This line is removed
       
       // Mark step as active
       setSimulation(prev => {
@@ -255,7 +253,7 @@ const SolanaPaySimulator: React.FC = () => {
 
   const resetSimulation = () => {
     setSimulation(null)
-    setCurrentStep(0)
+    // setCurrentStep(0) // This line is removed
     setSimulationComplete(false)
     setIsSimulating(false)
   }

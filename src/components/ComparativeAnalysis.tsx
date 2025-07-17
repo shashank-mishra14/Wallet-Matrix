@@ -11,8 +11,6 @@ import {
   PieChart,
   Pie,
   Cell,
-  LineChart,
-  Line,
   Legend
 } from 'recharts'
 import { 
@@ -23,8 +21,7 @@ import {
   TrendingDown,
   Info,
   Award,
-  Shield,
-  Zap
+  Shield
 } from 'lucide-react'
 import { useWalletStore } from '../store/walletStore'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
@@ -132,8 +129,6 @@ const ComparativeAnalysis: React.FC = () => {
       percentage: ((count / filteredWallets.length) * 100).toFixed(1)
     }))
   }, [filteredWallets])
-
-  const COLORS = ['#22C55E', '#F59E0B', '#EF4444', '#3B82F6', '#8B5CF6']
 
   return (
     <div className="p-6 space-y-6">
@@ -298,7 +293,7 @@ const ComparativeAnalysis: React.FC = () => {
             </CardHeader>
             <CardContent>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                {custodyData.map((item, index) => (
+                {custodyData.map((item) => (
                   <div key={item.name} className="text-center p-4 bg-gray-50 rounded-lg">
                     <div className="text-2xl font-bold text-gray-900">{item.value}</div>
                     <div className="text-sm text-gray-600">{item.name}</div>
@@ -323,7 +318,7 @@ const ComparativeAnalysis: React.FC = () => {
             </CardHeader>
             <CardContent>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                {auditData.map((item, index) => (
+                {auditData.map((item) => (
                   <div key={item.status} className="text-center p-4 bg-gray-50 rounded-lg">
                     <div className="text-2xl font-bold text-gray-900">{item.count}</div>
                     <div className="text-sm text-gray-600">{item.status}</div>

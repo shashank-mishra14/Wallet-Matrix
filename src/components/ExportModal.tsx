@@ -7,8 +7,7 @@ import {
   FileSpreadsheet, 
   Upload,
   CheckCircle,
-  XCircle,
-  AlertCircle
+  XCircle
 } from 'lucide-react'
 import { useWalletStore } from '../store/walletStore'
 import { ExportOptions } from '../types/wallet'

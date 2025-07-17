@@ -5,7 +5,6 @@ import {
   ExternalLink, 
   Check, 
   AlertTriangle, 
-  Shield, 
   Zap, 
   Clock, 
   Globe, 
