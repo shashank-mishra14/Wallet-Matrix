@@ -151,7 +151,7 @@ const Header: React.FC<HeaderProps> = ({ showFilters, setShowFilters }) => {
 
             {/* GitHub Link */}
             <a
-              href="https://github.com/yourusername/wallet-matrix"
+              href="https://github.com/shashank-mishra14/wallet-matrix"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors"
