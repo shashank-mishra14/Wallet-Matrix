@@ -14,6 +14,7 @@ import AnalyticsView from './components/AnalyticsView'
 import ExportModal from './components/ExportModal'
 import SolanaPaySimulator from './components/SolanaPaySimulator'
 import WalletIconTest from './components/WalletIconTest'
+import ComparativeAnalysis from './components/ComparativeAnalysis'
 
 function App() {
   const { 
@@ -134,6 +135,7 @@ function App() {
           <Route path="/export" element={<ExportModal />} />
           <Route path="/solana-pay" element={<SolanaPaySimulator />} />
           <Route path="/test-icons" element={<WalletIconTest />} />
+          <Route path="/comparative-analysis" element={<ComparativeAnalysis />} />
         </Routes>
       </main>
     </div>

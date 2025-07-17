@@ -926,5 +926,311 @@
       "free": true,
       "transactionFees": "low"
     }
+  },
+  {
+    "id": "nightly",
+    "name": "Nightly",
+    "description": "Multi-chain wallet with focus on Solana ecosystem and DeFi",
+    "platforms": ["chrome", "firefox", "ios", "android"],
+    "custodyModel": "self-custody",
+    "features": {
+      "dexSwap": true,
+      "nftGallery": true,
+      "staking": true,
+      "fiatOnRamp": false,
+      "fiatOffRamp": false,
+      "pushNotifications": true,
+      "solanaPayQR": "yes",
+      "biometricAuth": true,
+      "hardwareWalletSupport": false,
+      "multiChain": true,
+      "dappBrowser": true
+    },
+    "lastTested": "2024-01-10",
+    "version": "1.2.3",
+    "logo": "https://nightly.app/logo.png",
+    "website": "https://nightly.app",
+    "downloadLinks": {
+      "chrome": "https://chrome.google.com/webstore/detail/nightly/fhhkhnklhhkmgdgcjcnfcggbjlahbcik",
+      "firefox": "https://addons.mozilla.org/en-US/firefox/addon/nightly/",
+      "ios": "https://apps.apple.com/app/nightly/id1582959370",
+      "android": "https://play.google.com/store/apps/details?id=com.nightly.wallet"
+    },
+    "solanaPayNotes": "Good QR scanning with quick transaction flow. Supports most Solana Pay features.",
+    "category": "niche",
+    "security": {
+      "auditStatus": "unaudited",
+      "sourceCode": "open"
+    },
+    "performance": {
+      "transactionSpeed": "fast",
+      "failureRate": "low",
+      "uptime": 97.0
+    },
+    "userExperience": {
+      "onboarding": "easy",
+      "solanaPayUX": "one-tap",
+      "mobileOptimized": true
+    },
+    "pricing": {
+      "free": true,
+      "transactionFees": "low"
+    }
+  },
+  {
+    "id": "coin98",
+    "name": "Coin98",
+    "description": "Multi-chain wallet popular in Southeast Asia with Solana support",
+    "platforms": ["chrome", "firefox", "ios", "android", "web"],
+    "custodyModel": "self-custody",
+    "features": {
+      "dexSwap": true,
+      "nftGallery": true,
+      "staking": true,
+      "fiatOnRamp": true,
+      "fiatOffRamp": true,
+      "pushNotifications": true,
+      "solanaPayQR": "partial",
+      "biometricAuth": true,
+      "hardwareWalletSupport": false,
+      "multiChain": true,
+      "dappBrowser": true
+    },
+    "lastTested": "2024-01-08",
+    "version": "3.4.5",
+    "logo": "https://coin98.com/logo.png",
+    "website": "https://coin98.com",
+    "downloadLinks": {
+      "web": "https://wallet.coin98.com",
+      "chrome": "https://chrome.google.com/webstore/detail/coin98-wallet/aeachknmefphepccionboohckonoeemg",
+      "firefox": "https://addons.mozilla.org/en-US/firefox/addon/coin98-wallet/",
+      "ios": "https://apps.apple.com/app/coin98-wallet/id1561969966",
+      "android": "https://play.google.com/store/apps/details?id=coin98.crypto.finance.media"
+    },
+    "solanaPayNotes": "Partial QR support - can scan but transaction flow is complex. Popular in Asian markets.",
+    "category": "regional",
+    "security": {
+      "auditStatus": "audited",
+      "auditCompany": "Hacken",
+      "auditDate": "2023-06-15",
+      "sourceCode": "closed"
+    },
+    "performance": {
+      "transactionSpeed": "medium",
+      "failureRate": "medium",
+      "uptime": 95.5
+    },
+    "userExperience": {
+      "onboarding": "medium",
+      "solanaPayUX": "buried",
+      "mobileOptimized": true
+    },
+    "pricing": {
+      "free": true,
+      "transactionFees": "medium"
+    }
+  },
+  {
+    "id": "mathwallet",
+    "name": "MathWallet",
+    "description": "Multi-chain wallet with strong Asian presence and Solana integration",
+    "platforms": ["chrome", "firefox", "ios", "android", "web"],
+    "custodyModel": "self-custody",
+    "features": {
+      "dexSwap": true,
+      "nftGallery": false,
+      "staking": true,
+      "fiatOnRamp": false,
+      "fiatOffRamp": false,
+      "pushNotifications": false,
+      "solanaPayQR": "no",
+      "biometricAuth": false,
+      "hardwareWalletSupport": false,
+      "multiChain": true,
+      "dappBrowser": true
+    },
+    "lastTested": "2024-01-05",
+    "version": "2.8.1",
+    "logo": "https://mathwallet.org/logo.png",
+    "website": "https://mathwallet.org",
+    "downloadLinks": {
+      "web": "https://mathwallet.org/web/",
+      "chrome": "https://chrome.google.com/webstore/detail/mathwallet/afbcbjpbpfadlkmhmclhkeeodmamcflc",
+      "firefox": "https://addons.mozilla.org/en-US/firefox/addon/mathwallet/",
+      "ios": "https://apps.apple.com/app/mathwallet/id1454059017",
+      "android": "https://play.google.com/store/apps/details?id=com.mathwallet.android"
+    },
+    "solanaPayNotes": "No QR support for Solana Pay. Basic Solana functionality only.",
+    "category": "regional",
+    "security": {
+      "auditStatus": "unaudited",
+      "sourceCode": "closed"
+    },
+    "performance": {
+      "transactionSpeed": "medium",
+      "failureRate": "medium",
+      "uptime": 93.0
+    },
+    "userExperience": {
+      "onboarding": "complex",
+      "solanaPayUX": "none",
+      "mobileOptimized": true
+    },
+    "pricing": {
+      "free": true,
+      "transactionFees": "medium"
+    }
+  },
+  {
+    "id": "clover",
+    "name": "Clover Wallet",
+    "description": "Multi-chain wallet with focus on cross-chain functionality",
+    "platforms": ["chrome", "firefox", "ios", "android"],
+    "custodyModel": "self-custody",
+    "features": {
+      "dexSwap": true,
+      "nftGallery": true,
+      "staking": false,
+      "fiatOnRamp": false,
+      "fiatOffRamp": false,
+      "pushNotifications": true,
+      "solanaPayQR": "partial",
+      "biometricAuth": true,
+      "hardwareWalletSupport": false,
+      "multiChain": true,
+      "dappBrowser": true
+    },
+    "lastTested": "2024-01-03",
+    "version": "1.7.2",
+    "logo": "https://clover.finance/logo.png",
+    "website": "https://clover.finance",
+    "downloadLinks": {
+      "chrome": "https://chrome.google.com/webstore/detail/clover-wallet/nhnkbkgjikgcigadomkphalanndcapjk",
+      "firefox": "https://addons.mozilla.org/en-US/firefox/addon/clover-wallet/",
+      "ios": "https://apps.apple.com/app/clover-wallet/id1570072858",
+      "android": "https://play.google.com/store/apps/details?id=com.clover.wallet"
+    },
+    "solanaPayNotes": "Basic QR scanning available but inconsistent. Better suited for cross-chain activities.",
+    "category": "niche",
+    "security": {
+      "auditStatus": "unaudited",
+      "sourceCode": "closed"
+    },
+    "performance": {
+      "transactionSpeed": "medium",
+      "failureRate": "medium",
+      "uptime": 94.5
+    },
+    "userExperience": {
+      "onboarding": "medium",
+      "solanaPayUX": "buried",
+      "mobileOptimized": true
+    },
+    "pricing": {
+      "free": true,
+      "transactionFees": "medium"
+    }
+  },
+  {
+    "id": "step",
+    "name": "Step Finance",
+    "description": "Portfolio management and wallet with advanced Solana DeFi features",
+    "platforms": ["web", "chrome"],
+    "custodyModel": "self-custody",
+    "features": {
+      "dexSwap": true,
+      "nftGallery": false,
+      "staking": true,
+      "fiatOnRamp": false,
+      "fiatOffRamp": false,
+      "pushNotifications": false,
+      "solanaPayQR": "no",
+      "biometricAuth": false,
+      "hardwareWalletSupport": true,
+      "multiChain": false,
+      "dappBrowser": true
+    },
+    "lastTested": "2024-01-12",
+    "version": "2.1.0",
+    "logo": "https://step.finance/logo.png",
+    "website": "https://step.finance",
+    "downloadLinks": {
+      "web": "https://app.step.finance",
+      "chrome": "https://chrome.google.com/webstore/detail/step-finance/egmjhpjkmnidkjmcbnmjcjhpbfedhfhh"
+    },
+    "solanaPayNotes": "No QR support - focused on DeFi portfolio management rather than payments.",
+    "category": "niche",
+    "security": {
+      "auditStatus": "audited",
+      "auditCompany": "Bramah Systems",
+      "auditDate": "2023-09-20",
+      "sourceCode": "open"
+    },
+    "performance": {
+      "transactionSpeed": "fast",
+      "failureRate": "low",
+      "uptime": 98.0
+    },
+    "userExperience": {
+      "onboarding": "complex",
+      "solanaPayUX": "none",
+      "mobileOptimized": false
+    },
+    "pricing": {
+      "free": true,
+      "transactionFees": "low"
+    }
+  },
+  {
+    "id": "safepal",
+    "name": "SafePal",
+    "description": "Hardware and software wallet with global reach and multi-chain support",
+    "platforms": ["hardware", "ios", "android", "web"],
+    "custodyModel": "self-custody",
+    "features": {
+      "dexSwap": true,
+      "nftGallery": true,
+      "staking": true,
+      "fiatOnRamp": true,
+      "fiatOffRamp": true,
+      "pushNotifications": true,
+      "solanaPayQR": "partial",
+      "biometricAuth": true,
+      "hardwareWalletSupport": true,
+      "multiChain": true,
+      "dappBrowser": true
+    },
+    "lastTested": "2024-01-11",
+    "version": "3.2.1",
+    "logo": "https://safepal.io/logo.png",
+    "website": "https://safepal.io",
+    "downloadLinks": {
+      "hardware": "https://safepal.io/products/safepal-s1-hardware-wallet",
+      "ios": "https://apps.apple.com/app/safepal-wallet/id1548297139",
+      "android": "https://play.google.com/store/apps/details?id=io.safepal.wallet",
+      "web": "https://safepal.io/download"
+    },
+    "solanaPayNotes": "QR scanning available but requires hardware wallet confirmation. Good for secure payments.",
+    "category": "hardware",
+    "security": {
+      "auditStatus": "audited",
+      "auditCompany": "Cure53",
+      "auditDate": "2023-11-10",
+      "sourceCode": "closed"
+    },
+    "performance": {
+      "transactionSpeed": "medium",
+      "failureRate": "low",
+      "uptime": 96.5
+    },
+    "userExperience": {
+      "onboarding": "complex",
+      "solanaPayUX": "buried",
+      "mobileOptimized": true
+    },
+    "pricing": {
+      "free": false,
+      "transactionFees": "low"
+    }
   }
 ] 

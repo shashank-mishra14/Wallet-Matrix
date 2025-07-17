@@ -36,6 +36,7 @@ const Header: React.FC<HeaderProps> = ({ showFilters, setShowFilters }) => {
   const navigationItems = [
     { path: '/', label: 'Wallets' },
     { path: '/analytics', label: 'Analytics', icon: BarChart3 },
+    { path: '/comparative-analysis', label: 'Insights', icon: BarChart3 },
     { path: '/solana-pay', label: 'Solana Pay', icon: QrCode },
     { path: '/export', label: 'Export', icon: Download },
   ]
