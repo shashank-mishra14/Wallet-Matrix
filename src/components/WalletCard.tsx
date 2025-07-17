@@ -19,6 +19,7 @@ import {
 import { WalletFeature, SolanaPaySupport } from '../types/wallet'
 import { useWalletStore } from '../store/walletStore'
 import { format } from 'date-fns'
+import WalletIcon from './WalletIcon'
 
 interface WalletCardProps {
   wallet: WalletFeature
@@ -76,16 +77,16 @@ const WalletCard: React.FC<WalletCardProps> = ({ wallet }) => {
     return wallet.platforms.map((platform) => {
       switch (platform) {
         case 'web':
-          return <Globe key={platform} className="w-4 h-4" title="Web" />
+          return <Globe key={platform} className="w-4 h-4" />
         case 'ios':
         case 'android':
-          return <Smartphone key={platform} className="w-4 h-4" title={platform} />
+          return <Smartphone key={platform} className="w-4 h-4" />
         case 'desktop':
-          return <Monitor key={platform} className="w-4 h-4" title="Desktop" />
+          return <Monitor key={platform} className="w-4 h-4" />
         case 'hardware':
-          return <HardDrive key={platform} className="w-4 h-4" title="Hardware" />
+          return <HardDrive key={platform} className="w-4 h-4" />
         default:
-          return <Globe key={platform} className="w-4 h-4" title={platform} />
+          return <Globe key={platform} className="w-4 h-4" />
       }
     })
   }
@@ -103,13 +104,10 @@ const WalletCard: React.FC<WalletCardProps> = ({ wallet }) => {
     >
       <div className="wallet-card-header">
         <div className="flex items-center space-x-3">
-          <img 
-            src={wallet.logo} 
-            alt={`${wallet.name} logo`} 
+          <WalletIcon
+            walletName={wallet.name}
+            size="lg"
             className="wallet-logo"
-            onError={(e) => {
-              e.currentTarget.src = `https://via.placeholder.com/48x48?text=${wallet.name.charAt(0)}`
-            }}
           />
           <div>
             <h3 className="text-lg font-semibold text-gray-900">{wallet.name}</h3>

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { useWalletStore } from './store/walletStore'
@@ -7,7 +7,7 @@ import Header from './components/Header'
 import WalletGrid from './components/WalletGrid'
 import WalletTable from './components/WalletTable'
 import ComparisonView from './components/ComparisonView'
-
+import { AdvancedFilterPanel } from './components/AdvancedFilterPanel'
 import LoadingSpinner from './components/LoadingSpinner'
 import ErrorMessage from './components/ErrorMessage'
 import AnalyticsView from './components/AnalyticsView'
@@ -21,12 +21,15 @@ function App() {
     error, 
     filteredWallets, 
     comparison,
+    filters,
+    setFilters,
     setWallets,
     setLoading,
     setError 
   } = useWalletStore()
   
   const { data: wallets, isLoading: walletsLoading, error: walletsError } = useWallets()
+  const [showFilters, setShowFilters] = useState(false)
 
   useEffect(() => {
     if (wallets) {
@@ -63,7 +66,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Header />
+      <Header showFilters={showFilters} setShowFilters={setShowFilters} />
       
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <Routes>
@@ -97,15 +100,32 @@ function App() {
                 )}
               </div>
 
-              {/* Main Content */}
-              <motion.div
-                key={activeView}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.3 }}
-              >
-                {renderContent()}
-              </motion.div>
+              {/* Main Content with Sidebar */}
+              <div className="flex gap-6">
+                {/* Filter Sidebar */}
+                <div className={`transition-all duration-300 ${showFilters ? 'w-80' : 'w-0'} flex-shrink-0`}>
+                  <div className={`${showFilters ? 'opacity-100' : 'opacity-0'} transition-opacity duration-300`}>
+                    <AdvancedFilterPanel
+                      filters={filters}
+                      onFiltersChange={setFilters}
+                      isVisible={showFilters}
+                      onClose={() => setShowFilters(false)}
+                    />
+                  </div>
+                </div>
+
+                {/* Content Area */}
+                <div className="flex-1">
+                  <motion.div
+                    key={activeView}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    {renderContent()}
+                  </motion.div>
+                </div>
+              </div>
             </motion.div>
           } />
           
