@@ -3,8 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { 
   ChevronDown, 
   Filter, 
-  RotateCcw,
-  Bookmark
+  RotateCcw
 } from 'lucide-react'
 import { useWalletStore } from '../store/walletStore'
 import { Platform, CustodyModel, SolanaPaySupport } from '../types/wallet'
